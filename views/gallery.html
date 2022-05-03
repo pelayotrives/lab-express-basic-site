@@ -6,18 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylephotos.css">
 </head>
 <body>
-    <a href="/home">Home</a>
-    <a href="/about">About</a>
-    <a href="/works">Works</a>
-    <a href="/gallery">Gallery</a>
-    <h1>Gallery</h1>
-    <div id="div-imagen">
-        <img class="imagen-mj" src="mj1.jpg" alt="Michael Jackson">
-        <img class="imagen-mj" src="mj2.jpg" alt="Michael Jackson">
-        <img class="imagen-mj" src="mj3.jpg" alt="Michael Jackson">
-        <img class="imagen-mj" src="mj4.jpg" alt="Michael Jackson">
+    <div class="menu-header">
+        <a href="/home">Home</a>
+        <a href="/about">About</a>
+        <a href="/works">Works</a>
+        <a href="/gallery">Gallery</a>
     </div>
+    <h1>Gallery</h1>
+    
+    <div class="container">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+            <img src="mj1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+            <img src="mj2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+            <img src="mj3.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+            <img src="mj4.jpg" style="width:100%">
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="mj1.jpg" style="width: 100%; height:200px;" onclick="currentSlide(1)" alt="Three stages of Michael">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="mj2.jpg" style="width: 100%; height:200px;" onclick="currentSlide(2)" alt="The one and only">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="mj3.jpg" style="width: 100%; height:200px;" onclick="currentSlide(3)" alt="Michael at his peak">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="mj4.jpg" style="width: 100%; height:200px;" onclick="currentSlide(4)" alt="The last years of Michael Jackson">
+          </div>
+        </div>
+      </div>
+<script src="photos.js"></script>
 </body>
 </html>
+
+

@@ -12,7 +12,6 @@ app.listen(port, () => {
 
 //! Configuraciones del servidor
 
-
 app.use(express.static("public")); // Indica dónde están todos los elementos estáticos.
 
 //! Conexionado con HTML

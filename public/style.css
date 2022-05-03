@@ -1,4 +1,45 @@
-.imagen-mj {
-    width: 400px;
-    height: 250px;
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: "Akshar";
+}
+
+li:before {
+  content: "💿";
+  margin-left: -20px;
+  margin-right: 10px;
+}
+
+li {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.3s;
+    padding: 15px 25px;
+}
+
+a:hover {
+    color: purple;
+}
+
+h1 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.menu-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: aquamarine;
+    border-radius: 20px;
 }
